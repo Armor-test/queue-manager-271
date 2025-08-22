@@ -1,0 +1,36 @@
+# CODEOWNERS file for queue-manager-271
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-design @Armor-test/squad-payments @Armor-test/team-security
+
+# Directory ownership
+/app/ @Armor-test/unit-devops @Armor-test/dept-reliability
+/utils/ @Armor-test/dept-automation @Armor-test/unit-test @Armor-test/squad-payments
+/core/ @Armor-test/unit-test @Armor-test/dept-logging
+/examples/ @Armor-test/grp-storage @Armor-test/grp-reporting @Armor-test/squad-frontend
+/lib/ @Armor-test/squad-database @Armor-test/team-core
+/api/ @Armor-test/team-frontend @Armor-test/grp-reporting @Armor-test/squad-search
+/views/ @Armor-test/grp-ui @Armor-test/unit-devops
+/spec/ @Armor-test/squad-api @Armor-test/squad-reporting
+/helpers/ @Armor-test/unit-design @Armor-test/team-logging
+/migrations/ @Armor-test/team-research @Armor-test/dept-automation @Armor-test/dept-ui
+/vendor/ @Armor-test/grp-reporting @Armor-test/squad-search
+/services/ @Armor-test/team-core @Armor-test/grp-search
+/test/ @Armor-test/dept-data @Armor-test/team-notifications @Armor-test/squad-api
+
+# File type ownership
+*.properties @Armor-test/squad-ux @Armor-test/dept-automation @Armor-test/team-governance
+*.js @Armor-test/dept-identity @Armor-test/squad-qa @Armor-test/dept-data
+*.graphql @Armor-test/squad-database @Armor-test/dept-identity @Armor-test/team-governance
+*.proto @Armor-test/grp-search @Armor-test/squad-product @Armor-test/squad-cache
+*.json @Armor-test/grp-integration @Armor-test/dept-test
+*.md @Armor-test/dept-api @Armor-test/grp-storage @Armor-test/squad-ml
+*.ts @Armor-test/dept-reliability @Armor-test/grp-payments
+*.jsx @Armor-test/grp-reporting @Armor-test/squad-reporting
+*.tsx @Armor-test/dept-release @Armor-test/team-research @Armor-test/squad-reporting
+*.h @Armor-test/squad-frontend @Armor-test/grp-api
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
